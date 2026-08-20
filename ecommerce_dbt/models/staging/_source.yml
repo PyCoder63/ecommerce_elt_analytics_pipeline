@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: pipeline_warehouse
+    description: "Raw e-commerce data replicated via Airbyte"
+    database: pipeline_warehouse  # Make sure this matches your exact database name in Postgres
+    schema: ecommerce             # Or 'ecommerce' if your tables are in a custom schema
+    tables:
+      - name: customers
+      - name: orders
+      - name: order_items
+      - name: products

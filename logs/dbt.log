@@ -1,0 +1,399 @@
+[0m12:29:23.985168 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000272130CC590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027210624B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000272155DF890>]}
+
+
+============================== 12:29:23.991688 | 965a3c71-9ea2-46bc-b29b-32e65d633333 ==============================
+[0m12:29:23.991688 [info ] [MainThread]: Running with dbt=1.12.0
+[0m12:29:23.992415 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\Muftahu Abdulrahman\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'logs'}
+[0m12:29:24.100381 [info ] [MainThread]: dbt version: 1.12.0
+[0m12:29:24.101261 [info ] [MainThread]: python version: 3.14.6
+[0m12:29:24.101927 [info ] [MainThread]: python path: C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\venv\Scripts\python.exe
+[0m12:29:24.102242 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m12:29:24.198859 [info ] [MainThread]: Using profiles dir at C:\Users\Muftahu Abdulrahman\.dbt
+[0m12:29:24.199588 [info ] [MainThread]: Using profiles.yml file at C:\Users\Muftahu Abdulrahman\.dbt\profiles.yml
+[0m12:29:24.199971 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\dbt_project.yml
+[0m12:29:24.200449 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m12:29:24.201234 [debug] [MainThread]: Command `dbt debug` failed at 12:29:24.201128 after 0.42 seconds
+[0m12:29:24.201540 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000272156AB230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000272156D2450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000272158858C0>]}
+[0m12:29:24.201882 [debug] [MainThread]: Flushing usage events
+[0m12:29:25.151569 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:30:25.474887 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BAF2F4C590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BAF0524B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BAF545F890>]}
+
+
+============================== 12:30:25.480681 | 3cf8df64-dff3-4468-93a5-435fc8705710 ==============================
+[0m12:30:25.480681 [info ] [MainThread]: Running with dbt=1.12.0
+[0m12:30:25.481347 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Muftahu Abdulrahman\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt debug', 'log_path': 'logs'}
+[0m12:30:25.558080 [info ] [MainThread]: dbt version: 1.12.0
+[0m12:30:25.558674 [info ] [MainThread]: python version: 3.14.6
+[0m12:30:25.559073 [info ] [MainThread]: python path: C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\venv\Scripts\python.exe
+[0m12:30:25.559404 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m12:30:25.636151 [info ] [MainThread]: Using profiles dir at C:\Users\Muftahu Abdulrahman\.dbt
+[0m12:30:25.636886 [info ] [MainThread]: Using profiles.yml file at C:\Users\Muftahu Abdulrahman\.dbt\profiles.yml
+[0m12:30:25.637380 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\dbt_project.yml
+[0m12:30:25.637838 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m12:30:25.638601 [debug] [MainThread]: Command `dbt debug` failed at 12:30:25.638480 after 0.38 seconds
+[0m12:30:25.638922 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BAF552B230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BAF5552450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BAF56D58C0>]}
+[0m12:30:25.639245 [debug] [MainThread]: Flushing usage events
+[0m12:30:26.477694 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:34:02.577007 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011A7D61C590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011A7AC04B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011A7FB2F890>]}
+
+
+============================== 12:34:02.582702 | d3cecacf-622c-402c-9dd3-4250808e291f ==============================
+[0m12:34:02.582702 [info ] [MainThread]: Running with dbt=1.12.0
+[0m12:34:02.583397 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\Muftahu Abdulrahman\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt debug', 'log_path': 'logs'}
+[0m12:34:02.692773 [info ] [MainThread]: dbt version: 1.12.0
+[0m12:34:02.693582 [info ] [MainThread]: python version: 3.14.6
+[0m12:34:02.694114 [info ] [MainThread]: python path: C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\venv\Scripts\python.exe
+[0m12:34:02.694676 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m12:34:02.774573 [info ] [MainThread]: Using profiles dir at C:\Users\Muftahu Abdulrahman\.dbt
+[0m12:34:02.775265 [info ] [MainThread]: Using profiles.yml file at C:\Users\Muftahu Abdulrahman\.dbt\profiles.yml
+[0m12:34:02.775636 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\dbt_project.yml
+[0m12:34:02.776087 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m12:34:02.776939 [debug] [MainThread]: Command `dbt debug` failed at 12:34:02.776827 after 0.40 seconds
+[0m12:34:02.777247 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011A7FBFB230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011A7FC22450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011A7FDA58C0>]}
+[0m12:34:02.777603 [debug] [MainThread]: Flushing usage events
+[0m12:34:03.731418 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:35:09.475157 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002666920C590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026666764B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002666B71F890>]}
+
+
+============================== 12:35:09.480753 | 2a845aae-4be6-48a5-b1e1-bf7d9dc28528 ==============================
+[0m12:35:09.480753 [info ] [MainThread]: Running with dbt=1.12.0
+[0m12:35:09.481376 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Muftahu Abdulrahman\\.dbt', 'invocation_command': 'dbt debug', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m12:35:09.562192 [info ] [MainThread]: dbt version: 1.12.0
+[0m12:35:09.562767 [info ] [MainThread]: python version: 3.14.6
+[0m12:35:09.563276 [info ] [MainThread]: python path: C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\venv\Scripts\python.exe
+[0m12:35:09.563664 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m12:35:09.642235 [info ] [MainThread]: Using profiles dir at C:\Users\Muftahu Abdulrahman\.dbt
+[0m12:35:09.643127 [info ] [MainThread]: Using profiles.yml file at C:\Users\Muftahu Abdulrahman\.dbt\profiles.yml
+[0m12:35:09.643641 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\dbt_project.yml
+[0m12:35:09.644059 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m12:35:09.644803 [debug] [MainThread]: Command `dbt debug` failed at 12:35:09.644698 after 0.40 seconds
+[0m12:35:09.645106 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002666B7AF230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002666B812450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002666B9A58C0>]}
+[0m12:35:09.645451 [debug] [MainThread]: Flushing usage events
+[0m12:35:10.474873 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:42:29.937506 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DEB8CBC590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DEB6264B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DEBB1CF890>]}
+
+
+============================== 12:42:29.943820 | 2dc434eb-e5f4-4477-9e1e-9fc52b7baef7 ==============================
+[0m12:42:29.943820 [info ] [MainThread]: Running with dbt=1.12.0
+[0m12:42:29.944647 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Muftahu Abdulrahman\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'logs'}
+[0m12:42:30.030308 [info ] [MainThread]: dbt version: 1.12.0
+[0m12:42:30.030925 [info ] [MainThread]: python version: 3.14.6
+[0m12:42:30.031417 [info ] [MainThread]: python path: C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\venv\Scripts\python.exe
+[0m12:42:30.031754 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m12:42:30.114401 [info ] [MainThread]: Using profiles dir at C:\Users\Muftahu Abdulrahman\.dbt
+[0m12:42:30.115012 [info ] [MainThread]: Using profiles.yml file at C:\Users\Muftahu Abdulrahman\.dbt\profiles.yml
+[0m12:42:30.115556 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\dbt_project.yml
+[0m12:42:30.116042 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m12:42:30.116823 [debug] [MainThread]: Command `dbt debug` failed at 12:42:30.116716 after 0.42 seconds
+[0m12:42:30.117126 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DEBB263230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DEBB2C2450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DEBB4058C0>]}
+[0m12:42:30.117448 [debug] [MainThread]: Flushing usage events
+[0m12:42:31.041050 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:47:50.133119 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019506B2C590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019504114B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001950903F890>]}
+
+
+============================== 12:47:50.138662 | 9f2cc494-296c-44b7-889c-454110f304aa ==============================
+[0m12:47:50.138662 [info ] [MainThread]: Running with dbt=1.12.0
+[0m12:47:50.139333 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Muftahu Abdulrahman\\.dbt', 'invocation_command': 'dbt debug', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'logs'}
+[0m12:47:50.214872 [info ] [MainThread]: dbt version: 1.12.0
+[0m12:47:50.215554 [info ] [MainThread]: python version: 3.14.6
+[0m12:47:50.216116 [info ] [MainThread]: python path: C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\venv\Scripts\python.exe
+[0m12:47:50.216635 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m12:47:50.295281 [info ] [MainThread]: Using profiles dir at C:\Users\Muftahu Abdulrahman\.dbt
+[0m12:47:50.296010 [info ] [MainThread]: Using profiles.yml file at C:\Users\Muftahu Abdulrahman\.dbt\profiles.yml
+[0m12:47:50.296500 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\dbt_project.yml
+[0m12:47:50.297123 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m12:47:50.297916 [debug] [MainThread]: Command `dbt debug` failed at 12:47:50.297811 after 0.37 seconds
+[0m12:47:50.298310 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001950910B230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019509132450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000195092058C0>]}
+[0m12:47:50.298647 [debug] [MainThread]: Flushing usage events
+[0m12:47:51.200348 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:51:08.957617 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027A6F6EC590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027A6CCD4B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027A71BFF890>]}
+
+
+============================== 12:51:08.963203 | 4e6d27e7-9fe2-4f09-9609-297841669ba8 ==============================
+[0m12:51:08.963203 [info ] [MainThread]: Running with dbt=1.12.0
+[0m12:51:08.963935 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Muftahu Abdulrahman\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt debug', 'log_path': 'logs'}
+[0m12:51:09.041717 [info ] [MainThread]: dbt version: 1.12.0
+[0m12:51:09.042338 [info ] [MainThread]: python version: 3.14.6
+[0m12:51:09.042805 [info ] [MainThread]: python path: C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\venv\Scripts\python.exe
+[0m12:51:09.043314 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m12:51:09.120419 [info ] [MainThread]: Using profiles dir at C:\Users\Muftahu Abdulrahman\.dbt
+[0m12:51:09.121040 [info ] [MainThread]: Using profiles.yml file at C:\Users\Muftahu Abdulrahman\.dbt\profiles.yml
+[0m12:51:09.121581 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\dbt_project.yml
+[0m12:51:09.122044 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m12:51:09.123003 [debug] [MainThread]: Command `dbt debug` failed at 12:51:09.122878 after 0.44 seconds
+[0m12:51:09.123320 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027A71C8F230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027A71CF2450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027A71DBD8C0>]}
+[0m12:51:09.123713 [debug] [MainThread]: Flushing usage events
+[0m12:51:10.277869 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:54:07.218965 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000229FFB2C590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000229FD0B4B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000229820AF890>]}
+
+
+============================== 12:54:07.225789 | dd959852-f4ec-453e-a4c9-94773e821897 ==============================
+[0m12:54:07.225789 [info ] [MainThread]: Running with dbt=1.12.0
+[0m12:54:07.226563 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Muftahu Abdulrahman\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt debug', 'log_path': 'logs'}
+[0m12:54:07.327127 [info ] [MainThread]: dbt version: 1.12.0
+[0m12:54:07.327650 [info ] [MainThread]: python version: 3.14.6
+[0m12:54:07.328169 [info ] [MainThread]: python path: C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\venv\Scripts\python.exe
+[0m12:54:07.328665 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m12:54:07.438792 [info ] [MainThread]: Using profiles dir at C:\Users\Muftahu Abdulrahman\.dbt
+[0m12:54:07.439665 [info ] [MainThread]: Using profiles.yml file at C:\Users\Muftahu Abdulrahman\.dbt\profiles.yml
+[0m12:54:07.440363 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\dbt_project.yml
+[0m12:54:07.440870 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m12:54:07.441876 [debug] [MainThread]: Command `dbt debug` failed at 12:54:07.441728 after 0.69 seconds
+[0m12:54:07.442394 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002298217B230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000229821A2450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000229822D18C0>]}
+[0m12:54:07.443011 [debug] [MainThread]: Flushing usage events
+[0m12:54:08.324847 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:06:48.096468 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A0DAC6C590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A0D81D4B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A0DD17F890>]}
+
+
+============================== 13:06:48.104270 | 8eaa22d4-c022-4471-8574-a028bae424bb ==============================
+[0m13:06:48.104270 [info ] [MainThread]: Running with dbt=1.12.0
+[0m13:06:48.105061 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Muftahu Abdulrahman\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m13:06:48.196428 [info ] [MainThread]: dbt version: 1.12.0
+[0m13:06:48.196942 [info ] [MainThread]: python version: 3.14.6
+[0m13:06:48.197372 [info ] [MainThread]: python path: C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\venv\Scripts\python.exe
+[0m13:06:48.197729 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m13:06:48.295039 [info ] [MainThread]: Using profiles dir at C:\Users\Muftahu Abdulrahman\.dbt
+[0m13:06:48.295693 [info ] [MainThread]: Using profiles.yml file at C:\Users\Muftahu Abdulrahman\.dbt\profiles.yml
+[0m13:06:48.296134 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\dbt_project.yml
+[0m13:06:48.296639 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m13:06:48.297408 [debug] [MainThread]: Command `dbt debug` failed at 13:06:48.297260 after 0.42 seconds
+[0m13:06:48.297788 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A0DD213230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A0DD272450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A0DD3A58C0>]}
+[0m13:06:48.298165 [debug] [MainThread]: Flushing usage events
+[0m13:06:49.645467 [debug] [MainThread]: An error was encountered while trying to flush usage events
+==================== 2026-08-14T12:09:26.145690Z | 01a0002d-556d-72c0-958d-52d104922faf ====================
+12:09:26.148541 [info ]: dbt-fusion 2.0.0-preview.205
+12:09:26.152870 [info ]: Started loading project
+12:09:26.181700 [info ]: Loading ~/.dbt/profiles.yml
+12:09:26.195970 [info ]: Finished loading project [  0.04s]
+12:09:26.197619 [error]: [InvalidConfig (dbt1005)]: Configuration Error: The 'postgres' adapter is not yet supported by dbt Fusion. Supported adapters: snowflake, bigquery, databricks, redshift, duckdb, salesforce, clickhouse. To use an experimental adapter, set the environment variable DBT_ALLOW_EXPERIMENTAL_ADAPTERS=true. Note that experimental adapters may be unstable and are not yet recommended for production use.
+12:09:26.809361 [info ]: 
+==================== Execution Summary =====================
+Finished 'debug' with 1 error [663ms]
+[0m13:10:32.279199 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013D5DE0C590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013D5B3F4B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013D6031F890>]}
+
+
+============================== 13:10:32.285180 | 455e9f97-7c90-469f-8dbc-2837c7120d09 ==============================
+[0m13:10:32.285180 [info ] [MainThread]: Running with dbt=1.12.0
+[0m13:10:32.285917 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\Muftahu Abdulrahman\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt debug', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\Users\\Muftahu Abdulrahman\\Desktop\\Data Engineering Setups\\dbt\\e-commerce_elt_pipeline\\logs'}
+[0m13:10:32.362915 [info ] [MainThread]: dbt version: 1.12.0
+[0m13:10:32.363517 [info ] [MainThread]: python version: 3.14.6
+[0m13:10:32.364015 [info ] [MainThread]: python path: C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\venv\Scripts\python.exe
+[0m13:10:32.364414 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m13:10:32.440266 [info ] [MainThread]: Using profiles dir at C:\Users\Muftahu Abdulrahman\.dbt
+[0m13:10:32.440947 [info ] [MainThread]: Using profiles.yml file at C:\Users\Muftahu Abdulrahman\.dbt\profiles.yml
+[0m13:10:32.441489 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\dbt_project.yml
+[0m13:10:32.443400 [info ] [MainThread]: adapter type: postgres
+[0m13:10:32.444080 [info ] [MainThread]: adapter version: 1.11.0
+[0m13:10:32.594559 [info ] [MainThread]: Configuration:
+[0m13:10:32.595214 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m13:10:32.595692 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m13:10:32.596162 [info ] [MainThread]: Required dependencies:
+[0m13:10:32.596567 [debug] [MainThread]: Executing "git --help"
+[0m13:10:32.684271 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:10:32.684811 [debug] [MainThread]: STDERR: "b''"
+[0m13:10:32.685232 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:10:32.685616 [info ] [MainThread]: Connection:
+[0m13:10:32.686110 [info ] [MainThread]:   host: localhost
+[0m13:10:32.686569 [info ] [MainThread]:   port: 5432
+[0m13:10:32.687011 [info ] [MainThread]:   user: airbyte_user
+[0m13:10:32.687374 [info ] [MainThread]:   database: pipeline_source
+[0m13:10:32.687864 [info ] [MainThread]:   schema: public
+[0m13:10:32.688204 [info ] [MainThread]:   connect_timeout: 10
+[0m13:10:32.688522 [info ] [MainThread]:   role: None
+[0m13:10:32.688928 [info ] [MainThread]:   search_path: None
+[0m13:10:32.689338 [info ] [MainThread]:   keepalives_idle: 0
+[0m13:10:32.689677 [info ] [MainThread]:   sslmode: None
+[0m13:10:32.689991 [info ] [MainThread]:   sslcert: None
+[0m13:10:32.690382 [info ] [MainThread]:   sslkey: None
+[0m13:10:32.690829 [info ] [MainThread]:   sslrootcert: None
+[0m13:10:32.691287 [info ] [MainThread]:   application_name: dbt
+[0m13:10:32.691833 [info ] [MainThread]:   autocommit: False
+[0m13:10:32.692211 [info ] [MainThread]:   retries: 1
+[0m13:10:32.692920 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m13:10:33.039340 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m13:10:33.643461 [debug] [MainThread]: Using postgres connection "debug"
+[0m13:10:33.643839 [debug] [MainThread]: On debug: select 1 as id
+[0m13:10:33.644168 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:10:33.708225 [debug] [MainThread]: SQL status: SELECT 1 in 0.064 seconds
+[0m13:10:33.709155 [debug] [MainThread]: On debug: Close
+[0m13:10:33.709608 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m13:10:33.710081 [info ] [MainThread]: [32mAll checks passed![0m
+[0m13:10:33.711267 [debug] [MainThread]: Command `dbt debug` succeeded at 13:10:33.711117 after 1.64 seconds
+[0m13:10:33.711809 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m13:10:33.712259 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013D603EB230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013D606F3E30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013D5E5C6690>]}
+[0m13:10:33.712626 [debug] [MainThread]: Flushing usage events
+[0m13:10:34.746692 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:28:21.236313 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A09DEDC590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A09B444B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A0A04779D0>]}
+
+
+============================== 14:28:21.243216 | bbc49be6-5616-4e47-90a7-b2233ea6b791 ==============================
+[0m14:28:21.243216 [info ] [MainThread]: Running with dbt=1.12.0
+[0m14:28:21.243914 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Muftahu Abdulrahman\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\Users\\Muftahu Abdulrahman\\Desktop\\Data Engineering Setups\\dbt\\e-commerce_elt_pipeline\\logs'}
+[0m14:28:21.486663 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'bbc49be6-5616-4e47-90a7-b2233ea6b791', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A0A041A3F0>]}
+[0m14:28:21.551361 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'bbc49be6-5616-4e47-90a7-b2233ea6b791', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A09B3A7F00>]}
+[0m14:28:21.553885 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m14:28:21.960521 [debug] [MainThread]: checksum: 1a1139ce5df0bd0fc3ed20e8cfb0e57602247d47d7be0d246464b04b9034c8f4, vars: {}, profile: my_dbt_profile, target: dev_source, version: 1.12.0
+[0m14:28:21.964424 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m14:28:21.965368 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'bbc49be6-5616-4e47-90a7-b2233ea6b791', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A0A0407B50>]}
+[0m14:28:23.073974 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.ecommerce_dbt.example
+[0m14:28:23.078321 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'bbc49be6-5616-4e47-90a7-b2233ea6b791', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A0A07FEE40>]}
+[0m14:28:23.127762 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\target\manifest.json
+[0m14:28:23.136553 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\target\semantic_manifest.json
+[0m14:28:23.263560 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\target\osi_document.json
+[0m14:28:23.309005 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'bbc49be6-5616-4e47-90a7-b2233ea6b791', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A0A0BCD010>]}
+[0m14:28:23.309565 [info ] [MainThread]: Found 477 macros
+[0m14:28:23.310120 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bbc49be6-5616-4e47-90a7-b2233ea6b791', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A0A09CF040>]}
+[0m14:28:23.311622 [warn ] [MainThread]: [[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
+[0m14:28:23.312305 [debug] [MainThread]: Command end result
+[0m14:28:23.341514 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\target\manifest.json
+[0m14:28:23.347993 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\target\semantic_manifest.json
+[0m14:28:23.354160 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\target\osi_document.json
+[0m14:28:23.358904 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\target\run_results.json
+[0m14:28:23.359864 [debug] [MainThread]: Command `dbt run` succeeded at 14:28:23.359697 after 2.43 seconds
+[0m14:28:23.360236 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A0A0AC6BD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A0A0BB8CB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A0A0BB8940>]}
+[0m14:28:23.360639 [debug] [MainThread]: Flushing usage events
+[0m14:28:24.436593 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:01:00.561033 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002787634C590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027873900B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002787885F890>]}
+
+
+============================== 20:01:00.583877 | 4a990c89-90ad-44e6-931c-2a0c6e102b42 ==============================
+[0m20:01:00.583877 [info ] [MainThread]: Running with dbt=1.12.0
+[0m20:01:00.584898 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Muftahu Abdulrahman\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt debug', 'log_path': 'C:\\Users\\Muftahu Abdulrahman\\Desktop\\Data Engineering Setups\\dbt\\e-commerce_elt_pipeline\\logs'}
+[0m20:01:00.780277 [info ] [MainThread]: dbt version: 1.12.0
+[0m20:01:00.780825 [info ] [MainThread]: python version: 3.14.6
+[0m20:01:00.781316 [info ] [MainThread]: python path: C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\venv\Scripts\python.exe
+[0m20:01:00.781932 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m20:01:01.135614 [info ] [MainThread]: Using profiles dir at C:\Users\Muftahu Abdulrahman\.dbt
+[0m20:01:01.136355 [info ] [MainThread]: Using profiles.yml file at C:\Users\Muftahu Abdulrahman\.dbt\profiles.yml
+[0m20:01:01.136981 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\dbt_project.yml
+[0m20:01:01.142130 [info ] [MainThread]: adapter type: postgres
+[0m20:01:01.142677 [info ] [MainThread]: adapter version: 1.11.0
+[0m20:01:01.272015 [info ] [MainThread]: Configuration:
+[0m20:01:01.272612 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m20:01:01.273135 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m20:01:01.273577 [info ] [MainThread]: Required dependencies:
+[0m20:01:01.274086 [debug] [MainThread]: Executing "git --help"
+[0m20:01:01.381923 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m20:01:01.382397 [debug] [MainThread]: STDERR: "b''"
+[0m20:01:01.382772 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m20:01:01.383165 [info ] [MainThread]: Connection:
+[0m20:01:01.383576 [info ] [MainThread]:   host: localhost
+[0m20:01:01.384351 [info ] [MainThread]:   port: 5432
+[0m20:01:01.384861 [info ] [MainThread]:   user: airbyte_user
+[0m20:01:01.385343 [info ] [MainThread]:   database: pipeline_source
+[0m20:01:01.385811 [info ] [MainThread]:   schema: public
+[0m20:01:01.386311 [info ] [MainThread]:   connect_timeout: 10
+[0m20:01:01.386784 [info ] [MainThread]:   role: None
+[0m20:01:01.387314 [info ] [MainThread]:   search_path: None
+[0m20:01:01.387787 [info ] [MainThread]:   keepalives_idle: 0
+[0m20:01:01.388249 [info ] [MainThread]:   sslmode: None
+[0m20:01:01.388635 [info ] [MainThread]:   sslcert: None
+[0m20:01:01.389054 [info ] [MainThread]:   sslkey: None
+[0m20:01:01.389598 [info ] [MainThread]:   sslrootcert: None
+[0m20:01:01.390242 [info ] [MainThread]:   application_name: dbt
+[0m20:01:01.390741 [info ] [MainThread]:   autocommit: False
+[0m20:01:01.391463 [info ] [MainThread]:   retries: 1
+[0m20:01:01.392562 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m20:01:01.917822 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m20:01:04.867077 [debug] [MainThread]: Using postgres connection "debug"
+[0m20:01:04.867538 [debug] [MainThread]: On debug: select 1 as id
+[0m20:01:04.867799 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:01:04.916622 [debug] [MainThread]: SQL status: SELECT 1 in 0.049 seconds
+[0m20:01:04.917841 [debug] [MainThread]: On debug: Close
+[0m20:01:04.918353 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m20:01:04.919017 [info ] [MainThread]: [32mAll checks passed![0m
+[0m20:01:04.920410 [debug] [MainThread]: Command `dbt debug` succeeded at 20:01:04.920251 after 4.60 seconds
+[0m20:01:04.921346 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m20:01:04.922093 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002787892B230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027878C33E30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027876B0A690>]}
+[0m20:01:04.922553 [debug] [MainThread]: Flushing usage events
+[0m20:01:08.855729 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:01:21.595847 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D73409C590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D731620B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D7366339D0>]}
+
+
+============================== 20:01:21.602642 | 9ecf950d-24ee-461a-a38e-6f7fd3739d7b ==============================
+[0m20:01:21.602642 [info ] [MainThread]: Running with dbt=1.12.0
+[0m20:01:21.603385 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Muftahu Abdulrahman\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt test', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\Muftahu Abdulrahman\\Desktop\\Data Engineering Setups\\dbt\\e-commerce_elt_pipeline\\logs'}
+[0m20:01:21.866574 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9ecf950d-24ee-461a-a38e-6f7fd3739d7b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D7365DA3F0>]}
+[0m20:01:21.931550 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9ecf950d-24ee-461a-a38e-6f7fd3739d7b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D731597F00>]}
+[0m20:01:21.934086 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m20:01:22.368267 [debug] [MainThread]: checksum: 1a1139ce5df0bd0fc3ed20e8cfb0e57602247d47d7be0d246464b04b9034c8f4, vars: {}, profile: my_dbt_profile, target: dev_source, version: 1.12.0
+[0m20:01:23.348443 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m20:01:23.348825 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m20:01:23.349131 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m20:01:23.349489 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.ecommerce_dbt.example
+[0m20:01:23.353605 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9ecf950d-24ee-461a-a38e-6f7fd3739d7b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D736BBF350>]}
+[0m20:01:23.417570 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\target\manifest.json
+[0m20:01:23.430621 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\target\semantic_manifest.json
+[0m20:01:23.617315 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\target\osi_document.json
+[0m20:01:23.688461 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9ecf950d-24ee-461a-a38e-6f7fd3739d7b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D736E3BE30>]}
+[0m20:01:23.689028 [info ] [MainThread]: Found 477 macros
+[0m20:01:23.689488 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9ecf950d-24ee-461a-a38e-6f7fd3739d7b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D736EC4C90>]}
+[0m20:01:23.691080 [warn ] [MainThread]: [[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
+[0m20:01:23.693271 [debug] [MainThread]: Command end result
+[0m20:01:23.726678 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\target\manifest.json
+[0m20:01:23.734116 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\target\semantic_manifest.json
+[0m20:01:23.740721 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\target\osi_document.json
+[0m20:01:23.745176 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\target\run_results.json
+[0m20:01:23.745920 [debug] [MainThread]: Command `dbt test` succeeded at 20:01:23.745818 after 2.42 seconds
+[0m20:01:23.746234 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D73635CD50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D736E313D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D736E316D0>]}
+[0m20:01:23.746546 [debug] [MainThread]: Flushing usage events
+[0m20:01:27.079711 [debug] [MainThread]: An error was encountered while trying to flush usage events
+==================== 2026-08-15T12:44:10.748424Z | 01a00573-8034-7b70-a308-320fce4071f5 ====================
+12:44:10.750083 [info ]: dbt-fusion 2.0.0-preview.205
+12:44:10.762852 [info ]: Started loading project
+12:44:10.968109 [info ]: Loading ~/.dbt/profiles.yml
+12:44:11.047718 [info ]: Finished loading project [  0.28s]
+12:44:11.063259 [error]: [InvalidConfig (dbt1005)]: Configuration Error: The 'postgres' adapter is not yet supported by dbt Fusion. Supported adapters: snowflake, bigquery, databricks, redshift, duckdb, salesforce, clickhouse. To use an experimental adapter, set the environment variable DBT_ALLOW_EXPERIMENTAL_ADAPTERS=true. Note that experimental adapters may be unstable and are not yet recommended for production use.
+12:44:13.074472 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' with 1 error [2.3s]
+{"data":{"log_version":3,"version":"=2.0.0-preview.205"},"info":{"category":"","code":"A001","extra":{},"invocation_id":"01a007a3-7ebb-7de0-b1db-14fadcba368a","level":"info","msg":"Running with dbt-fusion=2.0.0-preview.205","name":"MainReportVersion","pid":16764,"thread":"tokio-rt-worker","ts":"2026-08-15T22:55:50.498058Z"}}
+{"data":{"args":{"debug":"false","invocation_command":"C:\\Users\\Muftahu Abdulrahman\\.local\\bin\\dbt.exe license info --json --log-format json","log_format":"json","quiet":"false","write_json":"true"}},"info":{"category":"","code":"A002","extra":{},"invocation_id":"01a007a3-7ebb-7de0-b1db-14fadcba368a","level":"debug","msg":"running dbt-fusion with arguments {\"command\":\"license\",\"vars\":\"{}\",\"limit\":\"10\",\"debug\":false,\"log_format\":\"json\",\"quiet\":false,\"write_json\":true,\"write_catalog\":false,\"manage_state\":false}","name":"MainReportArgs","pid":16764,"thread":"tokio-rt-worker","ts":"2026-08-15T22:55:50.499407Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"01a007a3-7ebb-7de0-b1db-14fadcba368a","level":"debug","msg":"No platform credentials found, skipping remote license","name":"Generic","pid":16764,"thread":"tokio-rt-worker","ts":"2026-08-15T22:55:50.560223Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"01a007a3-7ebb-7de0-b1db-14fadcba368a","level":"debug","msg":"Trial license from file C:\\Users\\Muftahu Abdulrahman\\.dbt\\license.trial is expired","name":"Generic","pid":16764,"thread":"tokio-rt-worker","ts":"2026-08-15T22:55:50.570542Z"}}
+{"data":{"columns":[],"is_inline":true,"node_name":"license_info","output_format":"json","preview":"{\n  \"status\": \"trial_expired\",\n  \"licensing_enabled\": true,\n  \"expires_at\": \"2026-08-13T16:22:21+00:00\",\n  \"license_type\": \"trial\"\n}","unique_id":"license.info"},"info":{"category":"","code":"Q041","extra":{},"invocation_id":"01a007a3-7ebb-7de0-b1db-14fadcba368a","level":"info","msg":"{\n  \"status\": \"trial_expired\",\n  \"licensing_enabled\": true,\n  \"expires_at\": \"2026-08-13T16:22:21+00:00\",\n  \"license_type\": \"trial\"\n}","name":"ShowNode","pid":16764,"thread":"tokio-rt-worker","ts":"2026-08-15T22:55:50.572088Z"}}
+{"data":{"completed_at":"2026-08-15T22:55:51.842722Z","elapsed":1.3478590250015259,"success":true},"info":{"category":"","code":"Q039","extra":{},"invocation_id":"01a007a3-7ebb-7de0-b1db-14fadcba368a","level":"info","msg":"\n==================== Execution Summary =====================\nFinished 'license' successfully [1.3s]","name":"CommandCompleted","pid":16764,"thread":"tokio-rt-worker","ts":"2026-08-15T22:55:51.844243Z"}}
+{"data":{"log_version":3,"version":"=2.0.0-preview.205"},"info":{"category":"","code":"A001","extra":{},"invocation_id":"01a00c32-cfbf-7d61-9882-ab9f662301e8","level":"info","msg":"Running with dbt-fusion=2.0.0-preview.205","name":"MainReportVersion","pid":12044,"thread":"tokio-rt-worker","ts":"2026-08-16T20:10:51.742231Z"}}
+{"data":{"args":{"debug":"false","invocation_command":"C:\\Users\\Muftahu Abdulrahman\\.local\\bin\\dbt.exe license info --json --log-format json","log_format":"json","quiet":"false","write_json":"true"}},"info":{"category":"","code":"A002","extra":{},"invocation_id":"01a00c32-cfbf-7d61-9882-ab9f662301e8","level":"debug","msg":"running dbt-fusion with arguments {\"command\":\"license\",\"vars\":\"{}\",\"limit\":\"10\",\"debug\":false,\"log_format\":\"json\",\"quiet\":false,\"write_json\":true,\"write_catalog\":false,\"manage_state\":false}","name":"MainReportArgs","pid":12044,"thread":"tokio-rt-worker","ts":"2026-08-16T20:10:51.742586Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"01a00c32-cfbf-7d61-9882-ab9f662301e8","level":"debug","msg":"No platform credentials found, skipping remote license","name":"Generic","pid":12044,"thread":"tokio-rt-worker","ts":"2026-08-16T20:10:51.781662Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"01a00c32-cfbf-7d61-9882-ab9f662301e8","level":"debug","msg":"Trial license from file C:\\Users\\Muftahu Abdulrahman\\.dbt\\license.trial is expired","name":"Generic","pid":12044,"thread":"tokio-rt-worker","ts":"2026-08-16T20:10:51.788285Z"}}
+{"data":{"columns":[],"is_inline":true,"node_name":"license_info","output_format":"json","preview":"{\n  \"status\": \"trial_expired\",\n  \"licensing_enabled\": true,\n  \"expires_at\": \"2026-08-13T16:22:21+00:00\",\n  \"license_type\": \"trial\"\n}","unique_id":"license.info"},"info":{"category":"","code":"Q041","extra":{},"invocation_id":"01a00c32-cfbf-7d61-9882-ab9f662301e8","level":"info","msg":"{\n  \"status\": \"trial_expired\",\n  \"licensing_enabled\": true,\n  \"expires_at\": \"2026-08-13T16:22:21+00:00\",\n  \"license_type\": \"trial\"\n}","name":"ShowNode","pid":12044,"thread":"tokio-rt-worker","ts":"2026-08-16T20:10:51.789707Z"}}
+{"data":{"completed_at":"2026-08-16T20:10:59.411477Z","elapsed":7.670826435089111,"success":true},"info":{"category":"","code":"Q039","extra":{},"invocation_id":"01a00c32-cfbf-7d61-9882-ab9f662301e8","level":"info","msg":"\n==================== Execution Summary =====================\nFinished 'license' successfully [7.7s]","name":"CommandCompleted","pid":12044,"thread":"tokio-rt-worker","ts":"2026-08-16T20:10:59.416234Z"}}
+{"data":{"log_version":3,"version":"=2.0.0-preview.205"},"info":{"category":"","code":"A001","extra":{},"invocation_id":"01a0119b-049b-7440-8fc4-ce71a1b8d780","level":"info","msg":"Running with dbt-fusion=2.0.0-preview.205","name":"MainReportVersion","pid":19176,"thread":"tokio-rt-worker","ts":"2026-08-17T21:22:47.076704Z"}}
+{"data":{"args":{"debug":"false","invocation_command":"C:\\Users\\Muftahu Abdulrahman\\.local\\bin\\dbt.exe license info --json --log-format json","log_format":"json","quiet":"false","write_json":"true"}},"info":{"category":"","code":"A002","extra":{},"invocation_id":"01a0119b-049b-7440-8fc4-ce71a1b8d780","level":"debug","msg":"running dbt-fusion with arguments {\"command\":\"license\",\"vars\":\"{}\",\"limit\":\"10\",\"debug\":false,\"log_format\":\"json\",\"quiet\":false,\"write_json\":true,\"write_catalog\":false,\"manage_state\":false}","name":"MainReportArgs","pid":19176,"thread":"tokio-rt-worker","ts":"2026-08-17T21:22:47.076756Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"01a0119b-049b-7440-8fc4-ce71a1b8d780","level":"debug","msg":"No platform credentials found, skipping remote license","name":"Generic","pid":19176,"thread":"tokio-rt-worker","ts":"2026-08-17T21:22:47.113529Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"01a0119b-049b-7440-8fc4-ce71a1b8d780","level":"debug","msg":"Trial license from file C:\\Users\\Muftahu Abdulrahman\\.dbt\\license.trial is expired","name":"Generic","pid":19176,"thread":"tokio-rt-worker","ts":"2026-08-17T21:22:47.117304Z"}}
+{"data":{"columns":[],"is_inline":true,"node_name":"license_info","output_format":"json","preview":"{\n  \"status\": \"trial_expired\",\n  \"licensing_enabled\": true,\n  \"expires_at\": \"2026-08-13T16:22:21+00:00\",\n  \"license_type\": \"trial\"\n}","unique_id":"license.info"},"info":{"category":"","code":"Q041","extra":{},"invocation_id":"01a0119b-049b-7440-8fc4-ce71a1b8d780","level":"info","msg":"{\n  \"status\": \"trial_expired\",\n  \"licensing_enabled\": true,\n  \"expires_at\": \"2026-08-13T16:22:21+00:00\",\n  \"license_type\": \"trial\"\n}","name":"ShowNode","pid":19176,"thread":"tokio-rt-worker","ts":"2026-08-17T21:22:47.118618Z"}}
+{"data":{"completed_at":"2026-08-17T21:22:50.210298Z","elapsed":3.1338720321655273,"success":true},"info":{"category":"","code":"Q039","extra":{},"invocation_id":"01a0119b-049b-7440-8fc4-ce71a1b8d780","level":"info","msg":"\n==================== Execution Summary =====================\nFinished 'license' successfully [3.1s]","name":"CommandCompleted","pid":19176,"thread":"tokio-rt-worker","ts":"2026-08-17T21:22:50.210639Z"}}
+{"data":{"log_version":3,"version":"=2.0.0-preview.205"},"info":{"category":"","code":"A001","extra":{},"invocation_id":"01a01f6e-7402-7e43-8c07-43ed7f028e8c","level":"info","msg":"Running with dbt-fusion=2.0.0-preview.205","name":"MainReportVersion","pid":31232,"thread":"tokio-rt-worker","ts":"2026-08-20T13:48:47.681073Z"}}
+{"data":{"args":{"debug":"false","invocation_command":"C:\\Users\\Muftahu Abdulrahman\\.local\\bin\\dbt.exe license info --json --log-format json","log_format":"json","quiet":"false","write_json":"true"}},"info":{"category":"","code":"A002","extra":{},"invocation_id":"01a01f6e-7402-7e43-8c07-43ed7f028e8c","level":"debug","msg":"running dbt-fusion with arguments {\"command\":\"license\",\"vars\":\"{}\",\"limit\":\"10\",\"debug\":false,\"log_format\":\"json\",\"quiet\":false,\"write_json\":true,\"write_catalog\":false,\"manage_state\":false}","name":"MainReportArgs","pid":31232,"thread":"tokio-rt-worker","ts":"2026-08-20T13:48:47.682829Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"01a01f6e-7402-7e43-8c07-43ed7f028e8c","level":"debug","msg":"No platform credentials found, skipping remote license","name":"Generic","pid":31232,"thread":"tokio-rt-worker","ts":"2026-08-20T13:48:47.854736Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"01a01f6e-7402-7e43-8c07-43ed7f028e8c","level":"debug","msg":"Trial license from file C:\\Users\\Muftahu Abdulrahman\\.dbt\\license.trial is expired","name":"Generic","pid":31232,"thread":"tokio-rt-worker","ts":"2026-08-20T13:48:47.866097Z"}}
+{"data":{"columns":[],"is_inline":true,"node_name":"license_info","output_format":"json","preview":"{\n  \"status\": \"trial_expired\",\n  \"licensing_enabled\": true,\n  \"expires_at\": \"2026-08-13T16:22:21+00:00\",\n  \"license_type\": \"trial\"\n}","unique_id":"license.info"},"info":{"category":"","code":"Q041","extra":{},"invocation_id":"01a01f6e-7402-7e43-8c07-43ed7f028e8c","level":"info","msg":"{\n  \"status\": \"trial_expired\",\n  \"licensing_enabled\": true,\n  \"expires_at\": \"2026-08-13T16:22:21+00:00\",\n  \"license_type\": \"trial\"\n}","name":"ShowNode","pid":31232,"thread":"tokio-rt-worker","ts":"2026-08-20T13:48:47.872015Z"}}
+{"data":{"completed_at":"2026-08-20T13:48:48.484272Z","elapsed":0.8140657544136047,"success":true},"info":{"category":"","code":"Q039","extra":{},"invocation_id":"01a01f6e-7402-7e43-8c07-43ed7f028e8c","level":"info","msg":"\n==================== Execution Summary =====================\nFinished 'license' successfully [814ms]","name":"CommandCompleted","pid":31232,"thread":"tokio-rt-worker","ts":"2026-08-20T13:48:48.488191Z"}}
