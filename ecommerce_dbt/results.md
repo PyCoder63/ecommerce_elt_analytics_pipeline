@@ -20,3 +20,7 @@
 
  **Executing Analytic query on destination warehouse**
  ![analytic_query](image-7.png)
+
+### Injecting new data (seed_incremental.py) to validate auto incremental fresh via airflow DAG workflow
+![seed_incremental_injection](image-8.png)
+
