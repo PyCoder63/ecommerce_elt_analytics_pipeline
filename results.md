@@ -33,3 +33,6 @@
 
  **Executing Analytic psql query on destination warehouse after incremental seeding**
  ![analytical_query_after_injection](image-11.png)
+
+
+ ## END OF RESULT. THANKS FOR FOLLOWING. SEE README TO FULL DOCUMENTATION ON PROJECT

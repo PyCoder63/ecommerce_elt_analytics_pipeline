@@ -397,3 +397,236 @@ Finished 'run' with 1 error [2.3s]
 {"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"01a01f6e-7402-7e43-8c07-43ed7f028e8c","level":"debug","msg":"Trial license from file C:\\Users\\Muftahu Abdulrahman\\.dbt\\license.trial is expired","name":"Generic","pid":31232,"thread":"tokio-rt-worker","ts":"2026-08-20T13:48:47.866097Z"}}
 {"data":{"columns":[],"is_inline":true,"node_name":"license_info","output_format":"json","preview":"{\n  \"status\": \"trial_expired\",\n  \"licensing_enabled\": true,\n  \"expires_at\": \"2026-08-13T16:22:21+00:00\",\n  \"license_type\": \"trial\"\n}","unique_id":"license.info"},"info":{"category":"","code":"Q041","extra":{},"invocation_id":"01a01f6e-7402-7e43-8c07-43ed7f028e8c","level":"info","msg":"{\n  \"status\": \"trial_expired\",\n  \"licensing_enabled\": true,\n  \"expires_at\": \"2026-08-13T16:22:21+00:00\",\n  \"license_type\": \"trial\"\n}","name":"ShowNode","pid":31232,"thread":"tokio-rt-worker","ts":"2026-08-20T13:48:47.872015Z"}}
 {"data":{"completed_at":"2026-08-20T13:48:48.484272Z","elapsed":0.8140657544136047,"success":true},"info":{"category":"","code":"Q039","extra":{},"invocation_id":"01a01f6e-7402-7e43-8c07-43ed7f028e8c","level":"info","msg":"\n==================== Execution Summary =====================\nFinished 'license' successfully [814ms]","name":"CommandCompleted","pid":31232,"thread":"tokio-rt-worker","ts":"2026-08-20T13:48:48.488191Z"}}
+[0m17:44:26.612217 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CCB3B3C590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CCB10A4B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CCB604BD90>]}
+
+
+============================== 17:44:26.631565 | c851e7fa-7583-455a-a378-6313ff1589f6 ==============================
+[0m17:44:26.631565 [info ] [MainThread]: Running with dbt=1.12.0
+[0m17:44:26.632711 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Muftahu Abdulrahman\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt docs serve', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\Muftahu Abdulrahman\\Desktop\\Data Engineering Setups\\dbt\\e-commerce_elt_pipeline\\logs'}
+[0m17:44:27.167281 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c851e7fa-7583-455a-a378-6313ff1589f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CCB60FCB00>]}
+[0m17:44:27.251683 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c851e7fa-7583-455a-a378-6313ff1589f6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CCB1007F00>]}
+[0m17:45:08.043001 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+
+[0m17:45:08.069588 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\venv\Lib\site-packages\dbt\cli\requires.py", line 190, in wrapper
+    result, success = func(*args, **kwargs)
+                      ~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\venv\Lib\site-packages\dbt\cli\requires.py", line 136, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\venv\Lib\site-packages\dbt\cli\requires.py", line 287, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\venv\Lib\site-packages\dbt\cli\requires.py", line 332, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\venv\Lib\site-packages\dbt\cli\requires.py", line 379, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\venv\Lib\site-packages\dbt\cli\main.py", line 322, in docs_serve
+    results = task.run()
+  File "C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\venv\Lib\site-packages\dbt\task\docs\serve.py", line 29, in run
+    httpd.serve_forever()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Muftahu Abdulrahman\AppData\Local\Python\pythoncore-3.14-64\Lib\socketserver.py", line 235, in serve_forever
+    ready = selector.select(poll_interval)
+  File "C:\Users\Muftahu Abdulrahman\AppData\Local\Python\pythoncore-3.14-64\Lib\selectors.py", line 314, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Muftahu Abdulrahman\AppData\Local\Python\pythoncore-3.14-64\Lib\selectors.py", line 305, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+[0m17:45:08.071705 [debug] [MainThread]: Command `dbt docs serve` failed at 17:45:08.071516 after 41.83 seconds
+[0m17:45:08.072109 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CCB6476750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CCB6476A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CCB643B020>]}
+[0m17:45:08.072527 [debug] [MainThread]: Flushing usage events
+[0m17:45:09.130434 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:45:25.151751 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000276AF6DC590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000276ACCB4B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000276B1C73890>]}
+
+
+============================== 17:45:25.160227 | 97bad588-799a-45d0-927a-47a25b71020f ==============================
+[0m17:45:25.160227 [info ] [MainThread]: Running with dbt=1.12.0
+[0m17:45:25.161084 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Muftahu Abdulrahman\\.dbt', 'invocation_command': 'dbt docs generate', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\Muftahu Abdulrahman\\Desktop\\Data Engineering Setups\\dbt\\e-commerce_elt_pipeline\\logs'}
+[0m17:45:25.403823 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '97bad588-799a-45d0-927a-47a25b71020f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000276B1C1E520>]}
+[0m17:45:25.476809 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '97bad588-799a-45d0-927a-47a25b71020f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000276ACC27F00>]}
+[0m17:45:25.481792 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m17:45:26.016608 [debug] [MainThread]: checksum: d4169cbf90cceb163686d9ee9d63e04e93bfc66ba1c3e9598001a5268ee95106, vars: {}, profile: my_dbt_profile, target: dev_warehouse, version: 1.12.0
+[0m17:45:26.092472 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m17:45:26.093164 [debug] [MainThread]: previous checksum: d4169cbf90cceb163686d9ee9d63e04e93bfc66ba1c3e9598001a5268ee95106, current checksum: 1a1139ce5df0bd0fc3ed20e8cfb0e57602247d47d7be0d246464b04b9034c8f4
+[0m17:45:26.093586 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m17:45:26.094585 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '97bad588-799a-45d0-927a-47a25b71020f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000276B2182E50>]}
+[0m17:45:27.851149 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.ecommerce_dbt.example
+[0m17:45:27.856013 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '97bad588-799a-45d0-927a-47a25b71020f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000276B1CE9B80>]}
+[0m17:45:27.905311 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '97bad588-799a-45d0-927a-47a25b71020f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000276B21AA7B0>]}
+[0m17:45:27.905887 [info ] [MainThread]: Found 477 macros
+[0m17:45:27.906376 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '97bad588-799a-45d0-927a-47a25b71020f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000276B22CA4E0>]}
+[0m17:45:27.908361 [warn ] [MainThread]: [[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
+[0m17:45:27.909140 [debug] [MainThread]: Command end result
+[0m17:45:27.980956 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\target\manifest.json
+[0m17:45:27.996886 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\target\semantic_manifest.json
+[0m17:45:28.177744 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\target\osi_document.json
+[0m17:45:28.183160 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\target\run_results.json
+[0m17:45:28.187409 [debug] [MainThread]: Acquiring new postgres connection 'generate_catalog'
+[0m17:45:28.187910 [info ] [MainThread]: Building catalog
+[0m17:45:31.157450 [debug] [MainThread]: Wrote artifact CatalogArtifact to C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\target\catalog.json
+[0m17:45:31.189506 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\target\manifest.json
+[0m17:45:31.195773 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\target\semantic_manifest.json
+[0m17:45:31.203676 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\target\osi_document.json
+[0m17:45:31.204125 [info ] [MainThread]: Catalog written to C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\target\catalog.json
+[0m17:45:31.205057 [debug] [MainThread]: Command `dbt docs generate` succeeded at 17:45:31.204917 after 6.38 seconds
+[0m17:45:31.205419 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m17:45:31.205744 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000276B21DFF50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000276B2232570>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000276B222C680>]}
+[0m17:45:31.206173 [debug] [MainThread]: Flushing usage events
+[0m17:45:32.329530 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:45:45.963872 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024E693BC590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024E669A4B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024E6B8CBD90>]}
+
+
+============================== 17:45:45.977410 | 77bf3919-03db-4751-a9db-aba9c3230769 ==============================
+[0m17:45:45.977410 [info ] [MainThread]: Running with dbt=1.12.0
+[0m17:45:45.978707 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Muftahu Abdulrahman\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt docs serve', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\Muftahu Abdulrahman\\Desktop\\Data Engineering Setups\\dbt\\e-commerce_elt_pipeline\\logs'}
+[0m17:45:46.448426 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '77bf3919-03db-4751-a9db-aba9c3230769', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024E6B97CB00>]}
+[0m17:45:46.642457 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '77bf3919-03db-4751-a9db-aba9c3230769', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024E66917F00>]}
+[0m17:46:04.255200 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+
+[0m17:46:04.262185 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\venv\Lib\site-packages\dbt\cli\requires.py", line 190, in wrapper
+    result, success = func(*args, **kwargs)
+                      ~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\venv\Lib\site-packages\dbt\cli\requires.py", line 136, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\venv\Lib\site-packages\dbt\cli\requires.py", line 287, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\venv\Lib\site-packages\dbt\cli\requires.py", line 332, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\venv\Lib\site-packages\dbt\cli\requires.py", line 379, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\venv\Lib\site-packages\dbt\cli\main.py", line 322, in docs_serve
+    results = task.run()
+  File "C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\venv\Lib\site-packages\dbt\task\docs\serve.py", line 29, in run
+    httpd.serve_forever()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Muftahu Abdulrahman\AppData\Local\Python\pythoncore-3.14-64\Lib\socketserver.py", line 235, in serve_forever
+    ready = selector.select(poll_interval)
+  File "C:\Users\Muftahu Abdulrahman\AppData\Local\Python\pythoncore-3.14-64\Lib\selectors.py", line 314, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Muftahu Abdulrahman\AppData\Local\Python\pythoncore-3.14-64\Lib\selectors.py", line 305, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+[0m17:46:04.263816 [debug] [MainThread]: Command `dbt docs serve` failed at 17:46:04.263628 after 18.70 seconds
+[0m17:46:04.264292 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024E6BD06750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024E6BD06A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024E6BCCF020>]}
+[0m17:46:04.264701 [debug] [MainThread]: Flushing usage events
+[0m17:46:05.097886 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:46:25.370523 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF5413C590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF51694B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF566D79D0>]}
+
+
+============================== 17:46:25.378689 | 7a35b71c-b680-4f2c-964c-d98b97bb445c ==============================
+[0m17:46:25.378689 [info ] [MainThread]: Running with dbt=1.12.0
+[0m17:46:25.379736 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Muftahu Abdulrahman\\.dbt', 'invocation_command': 'dbt run', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\Users\\Muftahu Abdulrahman\\Desktop\\Data Engineering Setups\\dbt\\e-commerce_elt_pipeline\\logs'}
+[0m17:46:25.786002 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7a35b71c-b680-4f2c-964c-d98b97bb445c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF5667A3F0>]}
+[0m17:46:25.886217 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7a35b71c-b680-4f2c-964c-d98b97bb445c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF515F7F00>]}
+[0m17:46:25.889700 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m17:46:26.417775 [debug] [MainThread]: checksum: d4169cbf90cceb163686d9ee9d63e04e93bfc66ba1c3e9598001a5268ee95106, vars: {}, profile: my_dbt_profile, target: dev_warehouse, version: 1.12.0
+[0m17:46:26.841127 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:46:26.842147 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m17:46:26.842808 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:46:26.843715 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.ecommerce_dbt.example
+[0m17:46:26.852967 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7a35b71c-b680-4f2c-964c-d98b97bb445c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF56BF3350>]}
+[0m17:46:26.980852 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\target\manifest.json
+[0m17:46:26.989245 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\target\semantic_manifest.json
+[0m17:46:27.053400 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\target\osi_document.json
+[0m17:46:27.084326 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7a35b71c-b680-4f2c-964c-d98b97bb445c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF56CAF4D0>]}
+[0m17:46:27.085047 [info ] [MainThread]: Found 477 macros
+[0m17:46:27.085628 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7a35b71c-b680-4f2c-964c-d98b97bb445c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF56E44910>]}
+[0m17:46:27.087509 [warn ] [MainThread]: [[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
+[0m17:46:27.090535 [debug] [MainThread]: Command end result
+[0m17:46:27.128629 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\target\manifest.json
+[0m17:46:27.138039 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\target\semantic_manifest.json
+[0m17:46:27.144663 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\target\osi_document.json
+[0m17:46:27.150264 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\target\run_results.json
+[0m17:46:27.151174 [debug] [MainThread]: Command `dbt run` succeeded at 17:46:27.151022 after 2.18 seconds
+[0m17:46:27.151662 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF54A34940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF56D26D50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF56D26ED0>]}
+[0m17:46:27.152179 [debug] [MainThread]: Flushing usage events
+[0m17:46:27.968179 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:46:46.550438 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000197F798C590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000197F4EE4B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000197F9F279D0>]}
+
+
+============================== 17:46:46.564594 | b7a25dc7-0ad9-4160-82fb-40ced4389ca0 ==============================
+[0m17:46:46.564594 [info ] [MainThread]: Running with dbt=1.12.0
+[0m17:46:46.567061 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Muftahu Abdulrahman\\.dbt', 'invocation_command': 'dbt test', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\Muftahu Abdulrahman\\Desktop\\Data Engineering Setups\\dbt\\e-commerce_elt_pipeline\\logs'}
+[0m17:46:47.245070 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b7a25dc7-0ad9-4160-82fb-40ced4389ca0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000197F9ECA3F0>]}
+[0m17:46:47.373471 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b7a25dc7-0ad9-4160-82fb-40ced4389ca0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000197F4E47F00>]}
+[0m17:46:47.376297 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m17:46:48.294415 [debug] [MainThread]: checksum: d4169cbf90cceb163686d9ee9d63e04e93bfc66ba1c3e9598001a5268ee95106, vars: {}, profile: my_dbt_profile, target: dev_warehouse, version: 1.12.0
+[0m17:46:48.773152 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:46:48.774205 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m17:46:48.774989 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:46:48.775850 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.ecommerce_dbt.example
+[0m17:46:48.788510 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b7a25dc7-0ad9-4160-82fb-40ced4389ca0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000197FA4C3350>]}
+[0m17:46:48.918081 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\target\manifest.json
+[0m17:46:48.930206 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\target\semantic_manifest.json
+[0m17:46:49.032289 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\target\osi_document.json
+[0m17:46:49.112992 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b7a25dc7-0ad9-4160-82fb-40ced4389ca0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000197FA73BE30>]}
+[0m17:46:49.114336 [info ] [MainThread]: Found 477 macros
+[0m17:46:49.115500 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b7a25dc7-0ad9-4160-82fb-40ced4389ca0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000197FA7C4C90>]}
+[0m17:46:49.118749 [warn ] [MainThread]: [[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
+[0m17:46:49.124967 [debug] [MainThread]: Command end result
+[0m17:46:49.216310 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\target\manifest.json
+[0m17:46:49.230008 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\target\semantic_manifest.json
+[0m17:46:49.246276 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\target\osi_document.json
+[0m17:46:49.259406 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\target\run_results.json
+[0m17:46:49.261451 [debug] [MainThread]: Command `dbt test` succeeded at 17:46:49.261132 after 3.20 seconds
+[0m17:46:49.262462 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000197F9C48D50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000197FA731550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000197FA7316D0>]}
+[0m17:46:49.263530 [debug] [MainThread]: Flushing usage events
+[0m17:46:50.277190 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:47:05.460142 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D01E4C590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D7F374B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D043E3890>]}
+
+
+============================== 17:47:05.466293 | 887f86fd-3111-430c-9445-1e253087086e ==============================
+[0m17:47:05.466293 [info ] [MainThread]: Running with dbt=1.12.0
+[0m17:47:05.467143 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Muftahu Abdulrahman\\.dbt', 'invocation_command': 'dbt docs generate', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\Muftahu Abdulrahman\\Desktop\\Data Engineering Setups\\dbt\\e-commerce_elt_pipeline\\logs'}
+[0m17:47:05.705694 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '887f86fd-3111-430c-9445-1e253087086e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D0438E520>]}
+[0m17:47:05.774302 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '887f86fd-3111-430c-9445-1e253087086e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D7F2D7F00>]}
+[0m17:47:05.777340 [info ] [MainThread]: Registered adapter: postgres=1.11.0
+[0m17:47:06.182674 [debug] [MainThread]: checksum: d4169cbf90cceb163686d9ee9d63e04e93bfc66ba1c3e9598001a5268ee95106, vars: {}, profile: my_dbt_profile, target: dev_warehouse, version: 1.12.0
+[0m17:47:06.399972 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:47:06.400572 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m17:47:06.400970 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:47:06.401529 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.ecommerce_dbt.example
+[0m17:47:06.406219 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '887f86fd-3111-430c-9445-1e253087086e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D04933350>]}
+[0m17:47:06.433913 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '887f86fd-3111-430c-9445-1e253087086e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D0462F890>]}
+[0m17:47:06.434695 [info ] [MainThread]: Found 477 macros
+[0m17:47:06.435472 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '887f86fd-3111-430c-9445-1e253087086e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D04A21FD0>]}
+[0m17:47:06.438294 [warn ] [MainThread]: [[33mWARNING[0m]: Nothing to do. Try checking your model configs and model specification args
+[0m17:47:06.442238 [debug] [MainThread]: Command end result
+[0m17:47:06.571715 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\target\manifest.json
+[0m17:47:06.582153 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\target\semantic_manifest.json
+[0m17:47:06.666397 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\target\osi_document.json
+[0m17:47:06.676107 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\target\run_results.json
+[0m17:47:06.689590 [debug] [MainThread]: Acquiring new postgres connection 'generate_catalog'
+[0m17:47:06.690329 [info ] [MainThread]: Building catalog
+[0m17:47:07.366973 [debug] [MainThread]: Wrote artifact CatalogArtifact to C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\target\catalog.json
+[0m17:47:07.399270 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\target\manifest.json
+[0m17:47:07.406182 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\target\semantic_manifest.json
+[0m17:47:07.411781 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\target\osi_document.json
+[0m17:47:07.412396 [info ] [MainThread]: Catalog written to C:\Users\Muftahu Abdulrahman\Desktop\Data Engineering Setups\dbt\e-commerce_elt_pipeline\target\catalog.json
+[0m17:47:07.414136 [debug] [MainThread]: Command `dbt docs generate` succeeded at 17:47:07.413987 after 2.27 seconds
+[0m17:47:07.414515 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m17:47:07.414860 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D04108D50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D04DA41D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015D04DA4110>]}
+[0m17:47:07.415220 [debug] [MainThread]: Flushing usage events
+[0m17:47:08.229800 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:47:19.813162 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2588C0590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B255EA4B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B25ADCBD90>]}
+
+
+============================== 17:47:19.819711 | 32050c34-cd72-4a5d-866d-20b5ac22ce33 ==============================
+[0m17:47:19.819711 [info ] [MainThread]: Running with dbt=1.12.0
+[0m17:47:19.820651 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\Muftahu Abdulrahman\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt docs serve', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\Muftahu Abdulrahman\\Desktop\\Data Engineering Setups\\dbt\\e-commerce_elt_pipeline\\logs'}
+[0m17:47:20.239981 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '32050c34-cd72-4a5d-866d-20b5ac22ce33', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B25AE7CB00>]}
+[0m17:47:20.384047 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '32050c34-cd72-4a5d-866d-20b5ac22ce33', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B255E17F00>]}
