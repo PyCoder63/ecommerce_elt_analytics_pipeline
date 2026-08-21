@@ -45,20 +45,7 @@ incrementally syncs new records into the warehouse, and dbt transforms that raw
 data into analytics-ready models — all triggered by an Airflow DAG running on a
 6-hour schedule.
 
-```mermaid
-flowchart TD
-    A["seed_source.py / seed_incremental.py<br/><sub>Manual data injection</sub>"] --> B["pipeline_source (Postgres)<br/><sub>Raw transactional data</sub>"]
-    B --> C["trigger_airbyte_sync<br/><sub>Airbyte incremental sync</sub>"]
-    C --> D["pipeline_warehouse (Postgres)<br/><sub>Synced raw data</sub>"]
-    D --> E["run_dbt_transformations<br/><sub>dbt run</sub>"]
-    E --> F["Analytics-ready models<br/><sub>ecommerce schema</sub>"]
-
-    subgraph Airflow["Airflow DAG: ecommerce_elt_pipeline (every 6 hours)"]
-        C
-        D
-        E
-    end
-```
+![workflow_chart](image.png)
 
 ### Stage-by-stage breakdown
 
