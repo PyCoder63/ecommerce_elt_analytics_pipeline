@@ -4,7 +4,7 @@
 ![docker_containers](images/docker_containers.png)
 
 ### DB comformation of data on source DB `pipeline_source` after seeding
-![seed_conformation](images/seed_conformation.png.png)
+![seed_conformation](images/seed_conformation.png)
 
 ### Airbyte Connection from source `pipeline_source` to destination `pipeline_warehouse`.
 ![airbyte_connection](images/airbyte_connection.png)
