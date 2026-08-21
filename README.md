@@ -24,7 +24,7 @@ over time and the official/source docs are the most reliable reference.
 | Component | What it does in this project | Setup reference |
 |---|---|---|
 | **Docker / Docker Compose** | Containerizes and networks every service in this pipeline | [Docker Compose docs](https://docs.docker.com/compose/) |
-| **Apache Airflow** | Orchestrates and schedules the pipeline (Airbyte sync + dbt run) | See my production Airflow setup repo: (https://github.com/PyCoder63/production_airflow_setup) |
+| **Apache Airflow** | Orchestrates and schedules the pipeline (Airbyte sync + dbt run) | See my production Airflow setup repo: [Production Airflow setup](https://github.com/PyCoder63/production_airflow_setup) |
 | **Airbyte** | Extracts data from the source database and loads it into the warehouse | [Official Airbyte self-hosted setup](https://docs.airbyte.com/using-airbyte/getting-started/oss-quickstart) |
 | **dbt** | Transforms raw warehouse data into analytics-ready models | [Official dbt setup guide](https://docs.getdbt.com/docs/core/installation-overview) |
 | **PostgreSQL (warehouse)** | Serves as both the pipeline source and destination warehouse | See the `pipeline-db` directory in this repo — includes the `docker-compose.yaml` used to spin up the warehouse database |
