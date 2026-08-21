@@ -45,7 +45,7 @@ incrementally syncs new records into the warehouse, and dbt transforms that raw
 data into analytics-ready models — all triggered by an Airflow DAG running on a
 6-hour schedule.
 
-![workflow_chart](image.png)
+![workflow_chart](workflow.png)
 
 ### Stage-by-stage breakdown
 
