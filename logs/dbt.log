@@ -636,3 +636,25 @@ There are 1 unused configuration paths:
 {"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"01a0239d-4050-7c83-be98-22fc59e620b0","level":"debug","msg":"Trial license from file C:\\Users\\Muftahu Abdulrahman\\.dbt\\license.trial is expired","name":"Generic","pid":21864,"thread":"tokio-rt-worker","ts":"2026-08-21T09:18:23.355257Z"}}
 {"data":{"columns":[],"is_inline":true,"node_name":"license_info","output_format":"json","preview":"{\n  \"status\": \"trial_expired\",\n  \"licensing_enabled\": true,\n  \"expires_at\": \"2026-08-13T16:22:21+00:00\",\n  \"license_type\": \"trial\"\n}","unique_id":"license.info"},"info":{"category":"","code":"Q041","extra":{},"invocation_id":"01a0239d-4050-7c83-be98-22fc59e620b0","level":"info","msg":"{\n  \"status\": \"trial_expired\",\n  \"licensing_enabled\": true,\n  \"expires_at\": \"2026-08-13T16:22:21+00:00\",\n  \"license_type\": \"trial\"\n}","name":"ShowNode","pid":21864,"thread":"tokio-rt-worker","ts":"2026-08-21T09:18:23.356451Z"}}
 {"data":{"completed_at":"2026-08-21T09:18:25.984690Z","elapsed":2.66233229637146,"success":true},"info":{"category":"","code":"Q039","extra":{},"invocation_id":"01a0239d-4050-7c83-be98-22fc59e620b0","level":"info","msg":"\n==================== Execution Summary =====================\nFinished 'license' successfully [2.7s]","name":"CommandCompleted","pid":21864,"thread":"tokio-rt-worker","ts":"2026-08-21T09:18:25.985042Z"}}
+==================== 2026-08-21T09:37:09.549731Z | 01a023ae-6fa7-7f91-9a21-de33ad3853bf ====================
+09:37:09.549927 [info ]: dbt-fusion 2.0.0-preview.205
+09:37:09.550463 [info ]: Started loading project
+09:37:09.559788 [info ]: Loading ~/.dbt/profiles.yml
+09:37:09.572697 [debug]:    Started loading packages
+09:37:09.575686 [debug]:     Loaded [  0.00s] packages
+09:37:09.577147 [info ]: Finished loading project [  0.03s]
+09:37:09.579039 [info ]: Started parsing
+09:37:09.703892 [warn ]: [UnusedResourceConfigPath (dbt1097)]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.ecommerce_dbt.example
+09:37:09.704679 [info ]: Finished parsing [  0.13s]
+09:37:09.707874 [info ]: Started scheduling
+09:37:09.708233 [info ]: Finished scheduling [  0.00s]
+09:37:09.708404 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+09:37:09.716109 [debug]: No platform credentials found, skipping remote license
+09:37:09.717342 [debug]: Trial license from file C:\Users\Muftahu Abdulrahman\.dbt\license.trial is expired
+09:37:09.718154 [debug]: License check failed: Feature not licensed: 'lineage'
+09:37:11.153480 [info ]: New version available 2.0.0-preview.210 (run `dbt system update`)
+09:37:11.285224 [info ]: 
+==================== Execution Summary =====================
+Finished 'build' with 2 warnings for target 'dev_warehouse' [1.7s]
